@@ -1,25 +1,82 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './Dashboard/Layout/Sidebar';
+import TopBar from './Dashboard/Layout/Topbar';
+import './index.css';
+import Wingo from './Dashboard/Pages/Wingo';
+import D from './Dashboard/Pages/5D';
+import K3 from './Dashboard/Pages/K3';
+import Member from './Dashboard/Members/Member';
+import Agent from './Dashboard/Agents/Agent';
+import CreatedSalery from './Dashboard/Pages/CreatedSalery';
+import LevelSetting from './Dashboard/Pages/LevelSetting';
+import Loader from './Dashboard/Pages/Loader';
 
-function App() {
+const App = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarMinimized, setIsSidebarMinimized] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const toggleMinimize = () => {
+    setIsSidebarMinimized(!isSidebarMinimized);
+  };
+
+  const handleOutsideClick = (e) => {
+    if (isSidebarOpen && !e.target.closest('.sidebar') && !e.target.closest('.topbar-button')) {
+      setIsSidebarOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Simulate loading data for 1 second (1000ms)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    // Cleanup the timer on component unmount
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[#454d55]">
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <Router>
+          <div className="flex relative" onClick={handleOutsideClick}>
+            <Sidebar
+              isOpen={isSidebarOpen}
+              isMinimized={isSidebarMinimized}
+              toggleSidebar={toggleSidebar}
+              toggleMinimize={toggleMinimize}
+            />
+            <div className={`flex flex-col h-[100vh] overflow-y-auto w-full min-h-screen transition-all duration-300`}>
+              <TopBar
+                toggleSidebar={toggleSidebar}
+                toggleMinimize={toggleMinimize}
+                isSidebarMinimized={isSidebarMinimized}
+              />
+              <div className="p-4">
+                <Routes>
+                  <Route path="/" element={<Wingo />} />
+                  <Route path="/5d" element={<D />} />
+                  <Route path="/k3" element={<K3 />} />
+                  <Route path="/members" element={<Member />} />
+                  <Route path="/agents" element={<Agent />} />
+                  <Route path="/salery" element={<CreatedSalery />} />
+                  <Route path="/level" element={<LevelSetting />} />
+                </Routes>
+              </div>
+            </div>
+          </div>
+        </Router>
+      )}
     </div>
   );
-}
+};
 
 export default App;
