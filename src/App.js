@@ -11,6 +11,11 @@ import Agent from './Dashboard/Agents/Agent';
 import CreatedSalery from './Dashboard/Pages/CreatedSalery';
 import LevelSetting from './Dashboard/Pages/LevelSetting';
 import Loader from './Dashboard/Pages/Loader';
+import BusnesMange from './Dashboard/Pages/BusnesMange';
+import PendingRecharge from './Dashboard/Pages/PendingRecharge';
+import PendingWithdraws from './Dashboard/Pages/PendingWithdraws';
+import RechargeApproved from './Dashboard/Pages/RechargeApproved';
+import WithdrawalApproved from './Dashboard/Pages/WithdrawalApproved';
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -54,7 +59,7 @@ const App = () => {
               toggleSidebar={toggleSidebar}
               toggleMinimize={toggleMinimize}
             />
-            <div className={`flex flex-col h-[100vh] overflow-y-auto w-full min-h-screen transition-all duration-300`}>
+            <div className={`flex flex-col h-[100vh] overflow-x-hidden overflow-y-auto w-full min-h-screen transition-all duration-300`}>
               <TopBar
                 toggleSidebar={toggleSidebar}
                 toggleMinimize={toggleMinimize}
@@ -69,6 +74,11 @@ const App = () => {
                   <Route path="/agents" element={<Agent />} />
                   <Route path="/salery" element={<CreatedSalery />} />
                   <Route path="/level" element={<LevelSetting />} />
+                  <Route path="/business" element={<BusnesMange />} />
+                  <Route path="/pendingRecharge" element={<PendingRecharge />} />
+                  <Route path="/pendingWithdraws" element={<PendingWithdraws />} />
+                  <Route path="/rechargeapproved" element={<RechargeApproved />} />
+                  <Route path="//withdrawapproved" element={<WithdrawalApproved />} />
                 </Routes>
               </div>
             </div>

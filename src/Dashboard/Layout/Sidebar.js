@@ -57,6 +57,36 @@ const Sidebar = ({ isOpen, isMinimized, toggleSidebar, toggleMinimize }) => {
             {!isMinimized && <span className="ml-4">Level Setting</span>}
           </Link>
         </li>
+        <li>
+          <Link to="/business" className="flex items-center p-2 hover:bg-gray-700">
+            <FaCog />
+            {!isMinimized && <span className="ml-4"> Business Manage</span>}
+          </Link>
+        </li>
+        <li>
+          <Link to="/pendingRecharge" className="flex items-center p-2 hover:bg-gray-700">
+            <FaCog />
+            {!isMinimized && <span className="ml-4">Pending Recharge</span>}
+          </Link>
+        </li>
+        <li>
+          <Link to="/pendingWithdraws" className="flex items-center p-2 hover:bg-gray-700">
+            <FaCog />
+            {!isMinimized && <span className="ml-4">Pending Withdrawls</span>}
+          </Link>
+        </li>
+        <li>
+          <Link to="/rechargeapproved" className="flex items-center p-2 hover:bg-gray-700">
+            <FaCog />
+            {!isMinimized && <span className="ml-4">Recharge (Approved)</span>}
+          </Link>
+        </li>
+        <li>
+          <Link to="/withdrawapproved" className="flex items-center p-2 hover:bg-gray-700">
+            <FaCog />
+            {!isMinimized && <span className="ml-4">Withdrawls (Approved)</span>}
+          </Link>
+        </li>
       </ul>
     </div>
   );

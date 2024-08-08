@@ -180,6 +180,114 @@ const LevelSetting = () => {
                       <button className="bg-green-500 text-white p-2 rounded"><GrUpdate /></button>
                     </td>
                   </tr>
+                  <tr>
+                    <td className="border border-border text-white p-2">9</td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border text-center p-2">
+                      <button className="bg-green-500 text-white p-2 rounded"><GrUpdate /></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border text-white p-2">10</td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border text-center p-2">
+                      <button className="bg-green-500 text-white p-2 rounded"><GrUpdate /></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border text-white p-2">11</td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border text-center p-2">
+                      <button className="bg-green-500 text-white p-2 rounded"><GrUpdate /></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border text-white p-2">12</td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border text-center p-2">
+                      <button className="bg-green-500 text-white p-2 rounded"><GrUpdate /></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border text-white p-2">13</td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border text-center p-2">
+                      <button className="bg-green-500 text-white p-2 rounded"><GrUpdate /></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border text-white p-2">14</td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border p-2">
+                      <input type="text" value="0.25" className="border border-border p-1" />
+                    </td>
+                    <td className="border border-border text-center p-2">
+                      <button className="bg-green-500 text-white p-2 rounded"><GrUpdate /></button>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
