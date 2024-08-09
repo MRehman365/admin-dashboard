@@ -57,7 +57,7 @@ const WithdrawalApproved = () => {
       </thead>
       <tbody>
         {filteredData.map((item) => (
-          <tr className="border border-border" key={item.id}>
+          <tr className="border border-border text-center" key={item.id}>
             <td className="border border-border p-2">{item.id}</td>
             <td className="border border-border p-2">{item.account}</td>
             <td className="border border-border p-2">{item.bank}</td>

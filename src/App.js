@@ -16,6 +16,12 @@ import PendingRecharge from './Dashboard/Pages/PendingRecharge';
 import PendingWithdraws from './Dashboard/Pages/PendingWithdraws';
 import RechargeApproved from './Dashboard/Pages/RechargeApproved';
 import WithdrawalApproved from './Dashboard/Pages/WithdrawalApproved';
+import Turnover from './Dashboard/Pages/Turnover';
+import BettingHistory from './Dashboard/Pages/BettingHistory';
+import GiftCode from './Dashboard/Pages/GiftCode';
+import Setting from './Dashboard/Pages/Setting';
+import Profile from './Dashboard/Members/Profile';
+import AgentProfile from './Dashboard/Agents/AgentProfile';
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -71,14 +77,20 @@ const App = () => {
                   <Route path="/5d" element={<D />} />
                   <Route path="/k3" element={<K3 />} />
                   <Route path="/members" element={<Member />} />
+                  <Route path="/profile" element={<Profile />} />
                   <Route path="/agents" element={<Agent />} />
+                  <Route path="/agentprofile" element={<AgentProfile/>} />
                   <Route path="/salery" element={<CreatedSalery />} />
                   <Route path="/level" element={<LevelSetting />} />
                   <Route path="/business" element={<BusnesMange />} />
                   <Route path="/pendingRecharge" element={<PendingRecharge />} />
                   <Route path="/pendingWithdraws" element={<PendingWithdraws />} />
                   <Route path="/rechargeapproved" element={<RechargeApproved />} />
-                  <Route path="//withdrawapproved" element={<WithdrawalApproved />} />
+                  <Route path="/withdrawapproved" element={<WithdrawalApproved />} />
+                  <Route path="/turnover" element={<Turnover />} />
+                  <Route path="/bethistory" element={<BettingHistory />} />
+                  <Route path="/giftcode" element={<GiftCode />} />
+                  <Route path="/setting" element={<Setting />} />
                 </Routes>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaUser, FaLock } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const data = [
   { id: 39558, mobile: '8169448604', position: 'USER', referCode: 'JIvQz97554', referBy: 'oCNXn89123', amount: 1170, password: 'Marshal@1421', status: 'Active' },
@@ -76,35 +77,31 @@ const Agent = () => {
     <div className="overflow-x-auto">
       <table className="min-w-full border-collapse border border-border" style={{boxShadow:"0px 0px 10px #343a99"}}>
         <thead>
-          <tr className="bg-card text-white">
+          <tr className=" text-white bg-[#3f6791]">
             <th className="border border-border p-2">#</th>
-            <th className="border border-border p-2">Mobile No.</th>
-            <th className="border border-border p-2">Position</th>
-            <th className="border border-border p-2">Refer Code</th>
-            <th className="border border-border p-2">Refer By</th>
-            <th className="border border-border p-2">Amount</th>
-            <th className="border border-border p-2">Password</th>
+            <th className="border border-border p-2">Account</th>
+            <th className="border border-border p-2">Level</th>
+            <th className="border border-border p-2">Balance</th>
+            <th className="border border-border p-2">Total Betting</th>
             <th className="border border-border p-2">Status</th>
-            <th className="border border-border p-2">Actions</th>
+            <th className="border border-border p-2">Action</th>
           </tr>
         </thead>
         <tbody>
           {paginatedData.map((item, index) => (
-            <tr key={index} className="bg-white text-black">
+            <tr key={index} className="text-white text-center">
               <td className="border border-border p-2">{item.id}</td>
               <td className="border border-border p-2">{item.mobile}</td>
               <td className="border border-border p-2">{item.position}</td>
               <td className="border border-border p-2">{item.referCode}</td>
               <td className="border border-border p-2">{item.referBy}</td>
-              <td className="border border-border p-2">{item.amount}</td>
-              <td className="border border-border p-2">{item.password}</td>
               <td className="border border-border p-2">
                 <span className="bg-green-500 text-white px-2 py-1 rounded">{item.status}</span>
               </td>
               <td className="border border-border p-2 flex space-x-2">
-                <button className="bg-blue-500 text-white p-1 rounded flex items-center">
+                <Link to="/agentprofile"><button className="bg-blue-500 text-white p-1 rounded flex items-center">
                   <FaUser className="mr-1" /> Profile
-                </button>
+                </button></Link>
                 <button className="bg-red-500 text-white p-1 rounded flex items-center">
                   <FaLock className="mr-1" /> Lock
                 </button>

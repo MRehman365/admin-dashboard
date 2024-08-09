@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaUser, FaLock } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const data = [
   { id: 39558, mobile: '8169448604', position: 'USER', referCode: 'JIvQz97554', referBy: 'oCNXn89123', amount: 1170, password: 'Marshal@1421', status: 'Active' },
@@ -102,9 +103,9 @@ const Member = () => {
                   <span className="bg-green-500 text-white px-2 py-1 rounded">{item.status}</span>
                 </td>
                 <td className="border border-border p-2 flex space-x-2">
-                  <button className="bg-blue-500 text-white p-1 rounded flex items-center">
+                  <Link to="/profile"><button className="bg-blue-500 text-white p-1 rounded flex items-center">
                     <FaUser className="mr-1" /> Profile
-                  </button>
+                  </button></Link>
                   <button className="bg-red-500 text-white p-1 rounded flex items-center">
                     <FaLock className="mr-1" /> Lock
                   </button>
