@@ -181,11 +181,11 @@ const BusnesMange = () => {
                   <h2 className="text-lg font-semibold mb-4">Create Partner Account</h2>
                   <div className="mb-4">
                     <label htmlFor="username" className="block text-sm font-medium ">Username</label>
-                    <input type="text" id="username" placeholder="Enter username" className="mt-1 text-black block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
+                    <input type="text" id="username" placeholder="Enter username" className="mt-1 text-white bg-[#454d55] block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
                   </div>
                   <div className="mb-4">
                     <label htmlFor="password" className="block text-sm font-medium ">Password</label>
-                    <input type="password" id="password" placeholder="Enter password" className="mt-1 text-black block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
+                    <input type="password" id="password" placeholder="Enter password" className="mt-1 text-white bg-[#454d55] block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
                   </div>
                   <button className="w-full bg-[#3f6791] p-2 rounded hover:bg-secondary/80">Initialize</button>
                 </div>
@@ -193,14 +193,14 @@ const BusnesMange = () => {
                   <h2 className="text-lg font-semibold mb-4">Increase/Decrease Points/Money for All Partners</h2>
                   <div className="mb-4 w-[100%]">
                     <label htmlFor="username" className="block text-md font-medium ">Select Funtion</label>
-                    <select name="Select Function" id="" className='text-black  w-[100%] p-2 rounded'>
+                    <select name="Select Function" id="" className='text-white bg-[#454d55]  w-[100%] p-2 rounded'>
                       <option value="Recharge" className='p-1'>Add money</option>
                       <option value="Withdrawal" className='p-1'>Deduct Money</option>
                     </select>
                   </div>
                   <div className="mb-4">
                     <label htmlFor="text" className="block  text-md font-medium ">Amount</label>
-                    <input type="number" id="text" placeholder="Enter Amount" className="mt-1 text-black block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
+                    <input type="number" id="text" placeholder="Enter Amount" className="mt-1 text-white bg-[#454d55] block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
                   </div>
                   <button className="w-full bg-[#3f6791] p-2 rounded hover:bg-secondary/80">Initialize</button>
                 </div>
@@ -208,18 +208,18 @@ const BusnesMange = () => {
                   <h2 className="text-lg font-semibold mb-4">Increase/Decrease Points/Money for a Partner</h2>
                   <div className="mb-4">
                     <label htmlFor="text" className="block  text-md font-medium ">User Name</label>
-                    <input type="number" id="text" placeholder="Enter Partner Name" className="mt-1 text-black block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
+                    <input type="number" id="text" placeholder="Enter Partner Name" className="mt-1 text-white bg-[#454d55] block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
                   </div>
                   <div className="mb-4 w-[100%]">
                     <label htmlFor="username" className="block text-md font-medium ">Select Funtion</label>
-                    <select name="Select Function" id="" className='text-black  w-[100%] p-2 rounded'>
+                    <select name="Select Function" id="" className='text-white bg-[#454d55]  w-[100%] p-2 rounded'>
                       <option value="Recharge" className='p-1'>Add money</option>
                       <option value="Withdrawal" className='p-1'>Deduct Money</option>
                     </select>
                   </div>
                   <div className="mb-4">
                     <label htmlFor="text" className="block  text-md font-medium ">Amount</label>
-                    <input type="number" id="text" placeholder="Enter Amount" className="mt-1 text-black block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
+                    <input type="number" id="text" placeholder="Enter Amount" className="mt-1 text-white bg-[#454d55] block w-full border border-border rounded p-2 focus:outline-none focus:ring focus:ring-ring" />
                   </div>
                   <button className="w-full bg-[#3f6791] p-2 rounded hover:bg-secondary/80">Initialize</button>
                 </div>

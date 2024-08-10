@@ -22,6 +22,7 @@ import GiftCode from './Dashboard/Pages/GiftCode';
 import Setting from './Dashboard/Pages/Setting';
 import Profile from './Dashboard/Members/Profile';
 import AgentProfile from './Dashboard/Agents/AgentProfile';
+import TodayReport from './Dashboard/Pages/TodayReport';
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -91,6 +92,7 @@ const App = () => {
                   <Route path="/bethistory" element={<BettingHistory />} />
                   <Route path="/giftcode" element={<GiftCode />} />
                   <Route path="/setting" element={<Setting />} />
+                  <Route path="/report" element={<TodayReport />} />
                 </Routes>
               </div>
             </div>

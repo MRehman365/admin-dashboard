@@ -127,6 +127,12 @@ const Sidebar = ({ isOpen, isMinimized, toggleSidebar, toggleMinimize }) => {
           </Link>
         </li>
         <li>
+          <Link to="/report" className="flex items-center p-2 hover:bg-gray-700">
+            <FaGift size={22}/>
+            {!isMinimized && <span className="ml-2">Today Report</span>}
+          </Link>
+        </li>
+        <li>
           <Link to="/" className="flex items-center p-2 hover:bg-gray-700">
           <RiLogoutBoxFill size={22}/>
             {!isMinimized && <span className="ml-2">Come Back</span>}

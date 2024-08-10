@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaUser, FaLock } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const data = [
   { id: 39558, mobile: '8169448604', position: 'USER', referCode: 'JIvQz97554', referBy: 'oCNXn89123', amount: 1170, password: 'Marshal@1421', status: 'Active' },
@@ -49,6 +50,40 @@ const Member = () => {
     currentPage * itemsPerPage
   );
 
+  const handleProfileClick = (id) => {
+    Swal.fire({
+      title: 'View Profile',
+      text: `You are about to view the profile of member ID: ${id}.`,
+      icon: 'info',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'View Profile',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Navigate to the profile page
+        window.location.href = `/profile/${id}`;
+      }
+    });
+  };
+
+  const handleLockClick = (id) => {
+    Swal.fire({
+      title: 'Lock Account',
+      text: `Are you sure you want to lock the account of member ID: ${id}?`,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, lock it!',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Handle lock logic here
+        Swal.fire('Locked!', 'The account has been locked.', 'success');
+      }
+    });
+  };
+
   return (
     <div>
       <div className="bg-background dark:bg-card p-6 rounded-lg">
@@ -77,7 +112,7 @@ const Member = () => {
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse border border-border">
           <thead>
-            <tr className="bg-card text-white">
+            <tr className="bg-[#3f6791] text-white">
               <th className="border border-border p-2">#</th>
               <th className="border border-border p-2">Mobile No.</th>
               <th className="border border-border p-2">Position</th>
@@ -91,7 +126,7 @@ const Member = () => {
           </thead>
           <tbody>
             {paginatedData.map((item, index) => (
-              <tr key={index} className="bg-white text-black">
+              <tr key={index} className="bg-[#343a40] text-white">
                 <td className="border border-border p-2">{item.id}</td>
                 <td className="border border-border p-2">{item.mobile}</td>
                 <td className="border border-border p-2">{item.position}</td>
@@ -103,10 +138,13 @@ const Member = () => {
                   <span className="bg-green-500 text-white px-2 py-1 rounded">{item.status}</span>
                 </td>
                 <td className="border border-border p-2 flex space-x-2">
-                  <Link to="/profile"><button className="bg-blue-500 text-white p-1 rounded flex items-center">
+                <Link to="/profile"><button className="bg-blue-500 text-white p-1 rounded flex items-center">
                     <FaUser className="mr-1" /> Profile
                   </button></Link>
-                  <button className="bg-red-500 text-white p-1 rounded flex items-center">
+                  <button
+                    className="bg-red-500 text-white p-1 rounded flex items-center"
+                    onClick={() => handleLockClick(item.id)}
+                  >
                     <FaLock className="mr-1" /> Lock
                   </button>
                 </td>
