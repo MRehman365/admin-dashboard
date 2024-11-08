@@ -68,7 +68,7 @@ const Turnover = () => {
       <input
         type="text"
         placeholder="Enter the account to search"
-        className="mt-2 p-2 border border-border rounded w-full"
+        className="mt-2 p-2 border border-border rounded w-full bg-[#343a40]"
         value={searchData}
         onChange={(e) => setsearchData(e.target.value)}
       />

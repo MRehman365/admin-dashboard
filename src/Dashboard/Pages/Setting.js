@@ -15,28 +15,7 @@ const Setting = () => {
     <button  className='p-2 rounded bg-[#3f6791] hover:bg-[#3f6791]/80'>Submit</button>
     </div>
     {/*  */}
-    <div className="mt-6 bg-[#343a40] p-3 flex flex-col gap-5 rounded">
-              <h2 className="text-xl font-semibold mb-4 text-center">Change Deposit Information</h2>
-              <div className="mb-6 flex flex-col gap-5">
-                <h3 className="text-lg font-semibold">BANKING</h3>
-                <input type="text" placeholder="Enter Rate" className='p-2 rounded bg-[#454d55]' />
-                <input type="text" placeholder="Enter Account Name" className='p-2 rounded bg-[#454d55]' />
-                <input type="text" placeholder="Enter Account Number" className='p-2 rounded bg-[#454d55]' />
-        
-                <button className='p-2 rounded bg-[#3f6791] hover:bg-[#3f6791]/80'>Submit</button>
-              </div>
-        
-              <div className="mt-6 bg-[#343a40] p-3 flex flex-col gap-5 rounded">
-                <h3 className="text-lg font-semibold text-center">Manual Settings</h3>
-                <h3 className="text-lg font-semibold">BANKING</h3>
-                <input type="text" placeholder="Rate" className='p-2 rounded bg-[#454d55]'  />
-                <input type="text" placeholder="Wallet Owner Name" className='p-2 rounded bg-[#454d55]'  />
-                <input type="text" placeholder="UPI ID" className='p-2 rounded bg-[#454d55]'  />
-                <input type="text" placeholder="USDT Wallet Address" className='p-2 rounded bg-[#454d55]'  />
-        
-                <button className='p-2 rounded bg-[#3f6791] hover:bg-[#3f6791]/80'>Submit</button>
-              </div>
-            </div>
+    
             <div className="mt-6 bg-[#343a40] p-3 flex flex-col gap-5 rounded">
               <h2 className="text-xl font-semibold mb-4 text-center">Telegram</h2>
               <div className="mb-6 flex flex-col gap-5">

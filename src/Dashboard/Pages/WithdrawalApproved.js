@@ -34,7 +34,7 @@ const WithdrawalApproved = () => {
     <input
       type="text"
       placeholder="Enter the account to search"
-      className="mt-4 p-2 border border-border rounded w-full"
+      className="mt-4 p-2 border border-border rounded w-full bg-[#343a40]"
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
     />

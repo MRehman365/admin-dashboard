@@ -38,7 +38,7 @@ const LevelSetting = () => {
   };
   return (
     <div>
-    <div className="p-4 bg-[#343a40] rounded" style={{boxShadow:"0px 0px 10px #343a99"}}>
+    <div className="p-4 bg-[#343a40] rounded text-white" style={{boxShadow:"0px 0px 10px #343a99"}}>
       <h2 className="text-2xl font-semibold text-white">Levels Setting</h2>
       <table className="min-w-full mt-4">
         <thead>
@@ -56,16 +56,16 @@ const LevelSetting = () => {
             <tr key={index}>
               <td className="border border-border text-white p-2">{levelData.level}</td>
               <td className="border border-border p-2">
-                <input type="text" value={levelData.f1} className="border border-border p-1" />
+                <input type="text" value={levelData.f1} className="border border-border p-1 bg-[#454d56]" />
               </td>
               <td className="border border-border p-2">
-                <input type="text" value={levelData.f2} className="border border-border p-1" />
+                <input type="text" value={levelData.f2} className="border border-border p-1 bg-[#454d56]" />
               </td>
               <td className="border border-border p-2">
-                <input type="text" value={levelData.f3} className="border border-border p-1" />
+                <input type="text" value={levelData.f3} className="border border-border p-1 bg-[#454d56]" />
               </td>
               <td className="border border-border p-2">
-                <input type="text" value={levelData.f4} className="border border-border p-1" />
+                <input type="text" value={levelData.f4} className="border border-border p-1 bg-[#454d56]" />
               </td>
               <td className="border border-border text-center p-2">
                 <button className="bg-green-500 text-white p-2 rounded" onClick={handleUpdate}>

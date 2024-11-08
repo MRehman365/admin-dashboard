@@ -121,6 +121,12 @@ const Sidebar = ({ isOpen, isMinimized, toggleSidebar, toggleMinimize }) => {
           </Link>
         </li>
         <li>
+          <Link to="/bankupi" className="flex items-center p-2 hover:bg-gray-700">
+          <BiSolidBank size={22}/>
+            {!isMinimized && <span className="ml-2">Banking & UPI</span>}
+          </Link>
+        </li>
+        <li>
           <Link to="/setting" className="flex items-center p-2 hover:bg-gray-700">
             <FaGift size={22}/>
             {!isMinimized && <span className="ml-2">Settings</span>}

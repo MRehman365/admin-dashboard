@@ -22,7 +22,7 @@ const GiftCode = () => {
         type="text"
         id="amount"
         placeholder="Enter the amount"
-        className="mt-1 p-2 border border-border rounded-md w-full"
+        className="mt-1 p-2 border border-border rounded-md w-full bg-[#343a40]"
       />
       <button className="mt-2 bg-[#3f6791] py-2 px-3 rounded hover:bg-[#3f6791]/80">
         Submit

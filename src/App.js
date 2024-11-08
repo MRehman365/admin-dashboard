@@ -23,6 +23,7 @@ import Setting from './Dashboard/Pages/Setting';
 import Profile from './Dashboard/Members/Profile';
 import AgentProfile from './Dashboard/Agents/AgentProfile';
 import TodayReport from './Dashboard/Pages/TodayReport';
+import BankUpi from './Dashboard/Pages/BankUpi';
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -93,6 +94,7 @@ const App = () => {
                   <Route path="/giftcode" element={<GiftCode />} />
                   <Route path="/setting" element={<Setting />} />
                   <Route path="/report" element={<TodayReport />} />
+                  <Route path="/bankupi" element={<BankUpi />} />
                 </Routes>
               </div>
             </div>

@@ -80,7 +80,7 @@ const BettingHistory = () => {
         <input
           type="text"
           placeholder="Enter the account to search"
-          className=" p-2 rounded w-full mt-7"
+          className=" p-2 rounded w-full mt-7 bg-[#343a40]"
           value={setsearchData}
           onChange={(e) => setsearchData(e.target.value)}
         />

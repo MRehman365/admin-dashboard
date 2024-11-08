@@ -86,11 +86,11 @@ const Member = () => {
 
   return (
     <div>
-      <div className="bg-background dark:bg-card p-6 rounded-lg">
+      <div className="bg-background dark:bg-card p-6 rounded-lg text-white">
         <h2 className="text-2xl font-bold text-white mb-4">Member List</h2>
         <div className="flex flex-col md:flex-row items-stretch md:items-center space-y-4 md:space-y-0 md:space-x-4">
           <select
-            className="border border-zinc-300 dark:border-primary p-2 rounded-md w-full md:w-auto"
+            className="border border-zinc-300 bg-[#343a40] p-2 rounded-md w-full md:w-auto"
             value={statusFilter}
             onChange={handleStatusChange}
           >
@@ -101,7 +101,7 @@ const Member = () => {
           <input
             type="text"
             placeholder="Enter the member you are looking for"
-            className="border border-zinc-300 dark:border-primary p-2 rounded-md flex-1"
+            className="border border-zinc-300 bg-[#343a40] p-2 rounded-md flex-1"
             value={searchTerm}
             onChange={handleSearchChange}
           />

@@ -77,12 +77,12 @@ const RechargeApproved = () => {
     <input
       type="text"
       placeholder="Enter the account to search"
-      className="mt-4 p-2 border border-border rounded-lg w-full"
+      className="mt-4 p-2 border border-border bg-[#343a40] rounded w-full"
       value={searchQuery}
       onChange={(e) => setSearchQuery(e.target.value)}
     />
-    <div className="mt-6 bg-[#343a40] p-4 rounded-lg">
-      <h2 className="text-lg font-semibold text-primary-foreground">Deposit List</h2>
+    <div className="mt-6 bg-[#343a40] p-4 rounded">
+      <h2 className="text-lg font-semibold ">Deposit List</h2>
       <table className="min-w-full mt-4">
         <thead>
           <tr className="bg-[#3f6791] border-t-[1px]">
